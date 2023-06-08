@@ -1,0 +1,35 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body{
+    //background-image: url('./assets/imagenes/fondo.jpg');
+    background-color: #0A0E21;
+}
+
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+.btn-color{
+    background-color: #ff3366;
+    border-color: #ff3366;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.btn-color:hover{
+    background-color: #f67701;
+    border-color: #f67701;
+}
+
+.foto{
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
+}
