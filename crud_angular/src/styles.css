@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.foto{
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/img/fondol.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .texto-blanco {
+    background-color: white;
+  }
+  
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
