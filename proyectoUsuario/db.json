@@ -1,0 +1,50 @@
+{
+  "user": [
+    {
+      "id": "kevan",
+      "name": "kevan1",
+      "password": "@Eslamayo@<33",
+      "email": "kevan1@hotmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "test1",
+      "name": "prueba1",
+      "password": "@Prueba123",
+      "email": "prueba@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "prueba2",
+      "name": "mariana",
+      "password": "@Prueba111",
+      "email": "mariana@gmail.com",
+      "gender": "female",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "prueba5",
+      "name": "kolaloca",
+      "password": "@Prueba12",
+      "email": "fifi@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<div style="text-align: center;">
+    <h1>Bienvenido</h1>
+</div>
+<div style="text-align: center;">
+    <form>
+        <table border="20" cellspacing="5">
+            <tr>
+                <td>SELECCIONAR MATERIA</td>
+                <select style="height:70px; width: 300px;">
+                    <option value="0">--Seleccione una materia--</option>
+                    <option *ngFor="let materias of materias" [value]="materias">{{ materias }}</option>
+                </select>
+
+                <td>HORARIO DISPONIBLE</td>
+                <input type="time" id="appt" name="appt" min="08:00" max="21:00" required value="08:00">
+                <input type="time" id="appt" name="appt" min="08:00" max="22:00" required value="19:00">
+
+
+                <td>PROFESOR</td>
+                <select style="height:70px; width: 300px;">
+                    <option value="0">--Seleccione un profesor--</option>
+                    <option *ngFor="let profes of profes" [value]="profes">{{ profes }}</option>
+                </select>
+            </tr>
+        </table>
+        <br>
+        <button (click)="generateTable($event)" [(ngModel)]="selectedSubject" (change)="generateTable($event)">GENERAR ARCHIVO</button>
+        
+    </form>
+    <br>
+</div>
+
+<br>
+<!--UwU-->
+<!--Equipo discord-->
+<div id="disponibilidadContainer">
+    <table *ngIf="showTable" border="1" width="107.5%">
+        <tr>
+            <th></th>
+            <th *ngFor="let day of daysOfWeek">{{ day }}</th>
+        </tr>
+        <tr *ngFor="let hour of hours">
+            <td>{{ hour }}</td>
+            <td *ngFor="let day of daysOfWeek"></td>
+        </tr>
+    </table>
+</div>
